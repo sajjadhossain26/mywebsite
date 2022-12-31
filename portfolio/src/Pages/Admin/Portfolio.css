@@ -1,0 +1,79 @@
+.manage-portfolio {
+  background-color: var(--BgPrimary);
+  padding: 50px 0px;
+}
+.manage-item {
+  margin: auto;
+  color: var(--TextColor);
+  margin-top: 50px;
+}
+.manage-item table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  color: var(--TextColor);
+  border: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: var(--BgSecondary);
+}
+.manage-item table thead th {
+  padding: 10px;
+}
+.manage-item td {
+  padding: 10px;
+  border: 1px solid rgba(162, 155, 155, 0.202);
+}
+.manage-item tr:nth-child(even) {
+  background-color: black;
+}
+.manage-item i {
+  margin: 5px;
+  display: flex;
+  color: brown;
+}
+.manage-item .add-portfolio {
+  margin: 20px 0px;
+}
+.manage-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.back-portfolio {
+  margin: 20px 0px;
+}
+.manage-btn {
+  background-color: var(--BgSecondary);
+  padding: 10px;
+  color: var(--BgWhite);
+  margin-top: 20px;
+}
+.add-portfolio {
+  background-color: var(--BgPrimary);
+  margin-top: -55px;
+}
+.portfolio-form {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  padding-top: 100px;
+}
+.portfolio-form input {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.portfolio-form input[type="file"] {
+  color: var(--(TextColor));
+}
+.portfolio-form .submit {
+  width: 200px;
+  background-color: var(--BgSecondary);
+  color: var(--BgWhite);
+  text-align: center;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}

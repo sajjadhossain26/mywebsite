@@ -1,0 +1,154 @@
+.Hero {
+  background-image: url(../../assets/Images/Sajjad.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: -54px;
+  z-index: 99;
+}
+
+.Hero::after {
+  content: "";
+  background-color: var(--BgPrimary);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0.9;
+}
+.Hero .container .content {
+  width: 60%;
+  z-index: 999;
+  color: var(--TextColor);
+  position: relative;
+}
+.Hero .container .content h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.Hero .container .content p {
+  line-height: 1.2;
+  font-weight: 300;
+}
+.hero_btn {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--TextColor);
+  margin-top: 20px;
+  font-size: 30px;
+  border: none;
+  position: relative;
+  padding: 10px 20px;
+}
+.hero_btn::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid var(--BorderColor);
+  border-left: 2px solid var(--BorderColor);
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+}
+.hero_btn:hover::before {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 96%;
+  border-top: 2px solid var(--BorderColor);
+  border-left: 2px solid var(--BorderColor);
+  left: 0;
+  top: 0;
+}
+.hero_btn::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid var(--BorderColor);
+  border-right: 2px solid var(--BorderColor);
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.hero_btn:hover::after {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 97%;
+  border-bottom: 2px solid var(--BorderColor);
+  border-right: 2px solid var(--BorderColor);
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+/* Services */
+.services {
+  background-color: var(--BgSecondary);
+  color: var(--TextColor);
+  padding: 100px 0px;
+}
+.services .content-wrap {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+}
+.services p {
+  color: var(--TextGray);
+  padding: 20px 0px;
+}
+.services .left-content h1 {
+  text-transform: uppercase;
+  padding: 20px 0px;
+  position: relative;
+}
+.services .left-content {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.services .left-content h1::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  border: 2px solid var(--BorderColor);
+  bottom: 0;
+  left: 0;
+}
+
+.services .right-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: space-between;
+}
+.services .right-content-wrap {
+  width: 50%;
+}
+.services .right-content .icon {
+  width: 40px;
+  margin: 20px 0px;
+  padding: 15px;
+  position: relative;
+}
+.services .right-content .icon::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--BorderColor);
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.services .right-content .icon:hover::after {
+  transform: rotate(45deg);
+}

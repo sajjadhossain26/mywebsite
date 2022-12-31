@@ -1,0 +1,129 @@
+.Header {
+  position: relative;
+  background-color: transparent;
+  margin-bottom: -54px;
+  z-index: 99999;
+}
+.Header ul li a {
+  color: var(--TextColor);
+}
+.Header ul li i {
+  color: var(--TextColor);
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .logo {
+  max-width: 200px;
+  margin-top: 10px;
+}
+.container .menu ul {
+  display: flex;
+  align-items: center;
+}
+.container .menu ul i {
+  margin-top: 4px;
+}
+.container .menu ul li a {
+  display: block;
+  margin: 10px;
+}
+.container .menu ul li img {
+  width: 20px;
+}
+#mobile-menu {
+  display: none;
+}
+.Header a {
+  overflow: hidden;
+  display: block;
+  padding-top: 5px;
+  margin: 0px;
+
+  height: 20px;
+}
+.Header span {
+  overflow: hidden;
+  display: block;
+}
+.Header span p {
+  display: inline-block;
+}
+
+.Header a:hover span {
+  transform: translateY(-20px);
+}
+
+.Header span:nth-child(1):hover p:nth-child(1) {
+  transform: translateY(-10px);
+
+  transition: 0.2s;
+}
+.Header span:nth-child(1):hover p:nth-child(2) {
+  transform: translateY(-10px);
+
+  transition: 0.3s;
+}
+.Header span:nth-child(1):hover p:nth-child(3) {
+  transform: translateY(-10px);
+
+  transition: 0.4s;
+}
+.Header span:nth-child(1):hover p:nth-child(4) {
+  transform: translateY(-10px);
+
+  transition: 0.5s;
+}
+.Header span:nth-child(1):hover p:nth-child(5) {
+  transform: translateY(-10px);
+
+  transition: 0.6s;
+}
+.Header span:nth-child(1):hover p:nth-child(6) {
+  transform: translateY(-10px);
+
+  transition: 0.7s;
+}
+.Header span:nth-child(1):hover p:nth-child(7) {
+  transform: translateY(-10px);
+
+  transition: 0.8s;
+}
+.Header span:nth-child(1):hover p:nth-child(8) {
+  transform: translateY(-10px);
+
+  transition: 0.9s;
+}
+.Header span:nth-child(1):hover p:nth-child(9) {
+  transform: translateY(-10px);
+
+  transition: 1s;
+}
+.Header span:nth-child(1):hover p:nth-child(10) {
+  transform: translateY(-10px);
+
+  transition: 0.7s;
+}
+.Header span:nth-child(1):hover p:nth-child(11) {
+  transform: translateY(-10px);
+
+  transition: 0.7s;
+}
+/* .Header span em {
+  animation: dropdown 3s ease-out forwards infinite;
+  animation-delay: 1s;
+} */
+
+.Header span {
+  transition: 1s;
+}
+/* @keyframes dropdown {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+} */

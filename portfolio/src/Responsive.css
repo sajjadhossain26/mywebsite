@@ -1,0 +1,92 @@
+@media all and (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+  .Hero h1 {
+    font-size: 25px !important;
+  }
+  .Hero button {
+    font-size: 25px;
+  }
+  .services .content-wrap {
+    flex-direction: column;
+  }
+  .services .content-wrap .left-content {
+    width: 90%;
+  }
+  .services .content-wrap .right-content {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1%;
+  }
+  .services .content-wrap .right-content .right-content-wrap {
+    justify-content: space-between;
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 660px) {
+  #mobile-menu {
+    display: block !important;
+  }
+  .Header ul {
+    position: absolute;
+    flex-direction: column;
+    background-color: aqua;
+    z-index: 99999;
+    width: 0%;
+    top: 100%;
+    left: 0%;
+    height: max-content;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    text-align: center;
+    transition: 0.4s;
+  }
+  .Header ul li {
+    padding: 10 20px;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 20px;
+  }
+  .Header ul li img {
+    width: 70px !important;
+  }
+  .Header ul.add {
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: 100%;
+    transition: 0.4s;
+  }
+  .Header .menu img {
+    width: 30px;
+    cursor: pointer;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .Hero .container .content {
+    margin: auto;
+    text-align: center;
+  }
+  .Hero .container .content p {
+    font-size: 12px;
+  }
+  .Hero button {
+    font-size: 25px;
+  }
+  .services .content-wrap {
+    flex-direction: column;
+  }
+  .services .content-wrap .left-content {
+    width: 90%;
+  }
+  .services .content-wrap .right-content {
+    width: 100%;
+  }
+  .services .content-wrap .right-content .right-content-wrap {
+    justify-content: space-between;
+    width: 90%;
+  }
+}
