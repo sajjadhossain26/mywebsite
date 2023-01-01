@@ -57,7 +57,7 @@ const Contact = () => {
         <h1>Contact</h1>
         <div className="container">
           <div className="form-wrap">
-            <div className="left-form">
+            <div className="left-form" data-aos="fade-up-right">
               <div className="form-info">
                 <div className="form-content-wrap">
                   <div className="form-info-icon">
@@ -95,7 +95,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="right-form">
+            <div className="right-form" data-aos="fade-up-left">
               <form onSubmit={handleFormSubmit}>
                 <input
                   type="text"

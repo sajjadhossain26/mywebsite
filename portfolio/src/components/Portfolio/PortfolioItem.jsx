@@ -20,7 +20,7 @@ const PortfolioItem = () => {
         <div className="container">
           <div className="portfolio-wrap">
             <h1>Portfolio</h1>
-            <div className="portfolio-img">
+            <div className="portfolio-img" data-aos="fade-up">
               {skliton && (
                 <>
                   <div className="portfolio-item">
@@ -74,7 +74,6 @@ const PortfolioItem = () => {
                   />
                 </div>
               ))}
-              <div className="portfolio-item"></div>
             </div>
           </div>
         </div>

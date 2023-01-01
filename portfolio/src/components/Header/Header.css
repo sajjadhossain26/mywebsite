@@ -1,14 +1,16 @@
 .Header {
   position: relative;
   background-color: transparent;
-  margin-bottom: -54px;
   z-index: 99999;
 }
 .Header ul li a {
   color: var(--TextColor);
+  font-size: 20px;
 }
 .Header ul li i {
   color: var(--TextColor);
+  font-size: 25px;
+  margin-left: 30px;
 }
 .header-wrap {
   display: flex;
@@ -16,15 +18,15 @@
   align-items: center;
 }
 .container .logo {
-  max-width: 200px;
-  margin-top: 10px;
+  max-width: 144px;
+  margin: 10px 0px;
 }
 .container .menu ul {
   display: flex;
   align-items: center;
 }
 .container .menu ul i {
-  margin-top: 4px;
+  margin-top: 12px;
 }
 .container .menu ul li a {
   display: block;
@@ -41,8 +43,6 @@
   display: block;
   padding-top: 5px;
   margin: 0px;
-
-  height: 20px;
 }
 .Header span {
   overflow: hidden;

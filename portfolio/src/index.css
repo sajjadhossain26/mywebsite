@@ -43,7 +43,9 @@ html {
   --IconColor: #00bfe7;
   --TextGray: white;
 }
-
+body {
+  background-color: var(--BgSecondary);
+}
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +60,6 @@ img {
   width: 100%;
 }
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: auto;
 }

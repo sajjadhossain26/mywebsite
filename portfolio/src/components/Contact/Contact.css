@@ -1,7 +1,7 @@
 .contact {
-  background-color: var(--BgSecondary);
+  background-color: var(--BgPrimary);
   color: var(--TextColor);
-  padding: 120px 0px;
+  padding: 100px 0px;
 }
 .contact h1 {
   margin: auto;
@@ -46,7 +46,7 @@
 
 /* form info */
 .form-wrap .form-info {
-  background-color: var(--BgPrimary);
+  background-color: var(--BgSecondary);
   width: max-content;
   padding: 30px;
   border-radius: 10px;

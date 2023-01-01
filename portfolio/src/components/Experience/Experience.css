@@ -1,0 +1,45 @@
+.experience-section {
+  background-color: var(--BgPrimary);
+  color: var(--TextColor);
+  padding: 100px 0px;
+}
+.experience-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.experience-section .experience-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+}
+.experience-section .experience-box .left {
+  background-color: var(--BgSecondary);
+  width: 50%;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.experience-section .experience-box .right {
+  width: 50%;
+  background-color: var(--BgSecondary);
+  padding: 40px;
+  border-radius: 20px;
+}
+.experience-section .experience-box i {
+  color: var(--BorderColor);
+  margin-top: 4px;
+}
+.experience-section .experience-box .content {
+  display: flex;
+  gap: 20%;
+}
+
+.experience-section .left-item {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.experience-section .right-item {
+  display: flex;
+  gap: 10px;
+}

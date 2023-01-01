@@ -1,16 +1,13 @@
 .Hero {
-  background-image: url(../../assets/Images/Sajjad.jpg);
+  /* background-image: url(../../assets/Images/Sajjad.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  margin-top: -54px;
-  z-index: 99;
+  position: relative; */
+  background-color: var(--BgSecondary);
+  margin-top: -50px;
 }
 
-.Hero::after {
+/* .Hero::after {
   content: "";
   background-color: var(--BgPrimary);
   position: absolute;
@@ -19,12 +16,42 @@
   top: 0;
   right: 0;
   opacity: 0.9;
-}
-.Hero .container .content {
-  width: 60%;
-  z-index: 999;
-  color: var(--TextColor);
+} */
+
+.Hero .hero-content-wrap {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+}
+.Hero .container .left-content {
+  width: 50%;
+  color: var(--TextColor);
+}
+.Hero .container .left-content .cv {
+  margin-top: 20px;
+}
+
+.Hero .social-icon {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+}
+.Hero .social-icon li {
+  margin-top: 10px;
+}
+.Hero .social-icon a {
+  color: var(--TextColor);
+  padding: 5px 10px;
+
+  transition: 0.3s;
+}
+.Hero .social-icon a:hover {
+  color: var(--BorderColor);
+}
+.Hero .container .right-content {
+  width: 50%;
 }
 .Hero .container .content h1 {
   font-size: 50px;
@@ -35,12 +62,22 @@
   line-height: 1.2;
   font-weight: 300;
 }
+.Hero .hero-content-wrap {
+  display: flex;
+}
+.Hero .left-content img {
+  border-radius: 40% 40% 0px 0px;
+}
+.Hero .left-content h1 {
+  margin-bottom: 10px;
+}
+
 .hero_btn {
   text-transform: uppercase;
   background-color: transparent;
   color: var(--TextColor);
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 25px;
   border: none;
   position: relative;
   padding: 10px 20px;
@@ -102,12 +139,12 @@
   justify-content: space-between;
 }
 .services p {
-  color: var(--TextGray);
-  padding: 20px 0px;
+  color: var(--TextColor);
+  padding-top: 20px;
 }
 .services .left-content h1 {
   text-transform: uppercase;
-  padding: 20px 0px;
+  padding-bottom: 20px;
   position: relative;
 }
 .services .left-content {
@@ -135,9 +172,19 @@
 }
 .services .right-content .icon {
   width: 40px;
+  height: 40px;
   margin: 20px 0px;
   padding: 15px;
   position: relative;
+  text-align: center;
+}
+.services .right-content .icon i {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  line-height: 35px;
+  margin: auto;
+  color: var(--BorderColor);
 }
 .services .right-content .icon::after {
   position: absolute;
@@ -148,6 +195,9 @@
   bottom: 0;
   left: 0;
   transition: 0.5s;
+}
+.services .services-btn {
+  margin-top: 30px;
 }
 .services .right-content .icon:hover::after {
   transform: rotate(45deg);

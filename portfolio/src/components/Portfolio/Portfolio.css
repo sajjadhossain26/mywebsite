@@ -1,8 +1,8 @@
 .portfolio {
-  background-color: var(--BgPrimary);
+  background-color: var(--BgSecondary);
   color: var(--TextColor);
   text-align: center;
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 .portfolio-wrap {
   margin: auto;

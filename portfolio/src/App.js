@@ -2,7 +2,6 @@ import { Route, Router, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 import PortfolioAdd from "./Pages/Admin/PortfolioAdd";
 import MangePortfolio from "./Pages/Admin/MangePortfolio";
@@ -13,6 +12,7 @@ import SinglePortfolio from "./components/Portfolio/SinglePortfolio";
 import PortfolioItem from "./components/Portfolio/PortfolioItem";
 import Contact from "./components/Contact/Contact";
 import Services from "./components/Services/Services";
+import About from "./components/About/About";
 
 function App() {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Services />} />
+        <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<PortfolioItem />} />
         <Route path="/contact" element={<Contact />} />
