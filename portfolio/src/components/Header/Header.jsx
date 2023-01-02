@@ -4,20 +4,17 @@ import logo from "../../assets/Images/logo.png";
 import mon from "../../assets/Images/mon.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import sun from "../../assets/Images/sun.png";
-import Mmenu from "../../assets/Images/menu.png";
-import Closemenu from "../../assets/Images/close-menu.png";
 
 const Header = () => {
-  const [theme, setTheme] = useState(sun);
-  const [menu, setMenu] = useState(Mmenu);
+  const [theme, setTheme] = useState("sun");
+  const [menu, setMenu] = useState("menu");
 
   const themes = (e) => {
     document.body.classList.toggle("dark");
     if (document.body.classList.contains("dark")) {
-      setTheme(mon);
+      setTheme("mon");
     } else {
-      setTheme(sun);
+      setTheme("sun");
     }
   };
 
@@ -25,9 +22,9 @@ const Header = () => {
     let checkMenu = document.querySelector(".ul-menu");
     checkMenu.classList.toggle("add");
     if (checkMenu.classList.contains("add")) {
-      setMenu(Closemenu);
+      setMenu("Closemenu");
     } else {
-      setMenu(Mmenu);
+      setMenu("menu");
     }
   };
 
@@ -73,7 +70,19 @@ const Header = () => {
                   )}
                 </li>
               </ul>
-              <img id="mobile-menu" onClick={handleMenu} src={menu} alt="" />
+              {menu === menu ? (
+                <i
+                  id="mobile-menu"
+                  onClick={handleMenu}
+                  class="fa-solid fa-bars"
+                ></i>
+              ) : (
+                <i
+                  id="mobile-menu"
+                  onClick={handleMenu}
+                  class="fa-solid fa-xmark"
+                ></i>
+              )}
             </div>
           </div>
         </div>

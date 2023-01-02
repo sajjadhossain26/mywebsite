@@ -19,7 +19,7 @@
 } */
 
 .Hero .hero-content-wrap {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,13 +30,13 @@
   color: var(--TextColor);
 }
 .Hero .container .left-content .cv {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .Hero .social-icon {
   position: absolute;
   left: 0;
-  bottom: 50px;
+  bottom: 60px;
 }
 .Hero .social-icon li {
   margin-top: 10px;
@@ -169,6 +169,7 @@
 }
 .services .right-content-wrap {
   width: 50%;
+  margin-bottom: 20px;
 }
 .services .right-content .icon {
   width: 40px;

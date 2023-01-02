@@ -23,6 +23,30 @@
     justify-content: space-between;
     width: 45%;
   }
+
+  /* experience section */
+  .experience-section .experience-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience-section .experience-box .left {
+    margin-bottom: 20px;
+  }
+
+  .experience-section .experience-box .inner {
+    padding-right: 10px;
+  }
+}
+
+@media all and (max-width: 1030px) {
+  .experience-section .experience-box .content {
+    flex-wrap: wrap;
+  }
+  .Hero .hero-content-wrap {
+    height: 80vh !important;
+  }
 }
 
 @media all and (max-width: 660px) {
@@ -32,12 +56,12 @@
   .Header ul {
     position: absolute;
     flex-direction: column;
-    background-color: aqua;
+    background-color: var(--BgPrimary);
     z-index: 99999;
     width: 0%;
-    top: 100%;
+    top: 0%;
     left: 0%;
-    height: max-content;
+    height: 100vh;
     opacity: 0 !important;
     visibility: hidden !important;
     text-align: center;
@@ -56,8 +80,9 @@
   .Header ul.add {
     opacity: 1 !important;
     visibility: visible !important;
-    width: 100%;
+    width: 50%;
     transition: 0.4s;
+    padding-top: 20%;
   }
   .Header .menu img {
     width: 30px;
@@ -66,8 +91,21 @@
   .container {
     max-width: 90%;
   }
+
+  /* Hero */
   .Hero .container .content {
     margin: auto;
+    text-align: center;
+  }
+  .Hero .container .left-content {
+    width: 90% !important;
+  }
+  .Hero .container .right-content {
+    width: 80% !important;
+  }
+  .Hero .hero-content-wrap {
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
   .Hero .container .content p {
@@ -76,6 +114,21 @@
   .Hero button {
     font-size: 25px;
   }
+
+  /* About */
+  .about-section .about-wrap {
+    flex-direction: column;
+  }
+  .about-section .about-wrap .about-left {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .about-section .about-wrap .about-right {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  /* Services */
   .services .content-wrap {
     flex-direction: column;
   }
@@ -88,5 +141,54 @@
   .services .content-wrap .right-content .right-content-wrap {
     justify-content: space-between;
     width: 90%;
+    margin-top: 20px;
   }
+
+  /* experience */
+  .experience-section .experience-box .left-text h3 {
+    overflow-wrap: break-word;
+  }
+  .experience-section .experience-box .left-item {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+  .experience-section .experience-box .left {
+    width: 70% !important;
+  }
+  .experience-section .experience-box .right {
+    width: 70% !important;
+  }
+
+  /* contact */
+  .contact .form-wrap {
+    flex-direction: column;
+  }
+  .contact .form-wrap .left-form {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .contact .form-wrap .right-form {
+    background-color: var(--BgSecondary);
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 20px;
+  }
+
+  .contact .form-wrap .form-info-text a {
+    overflow-wrap: break-word;
+    font-size: 15px;
+  }
+  .form-wrap .form-info {
+    width: 74% !important;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .Hero .container span {
+    font-size: 18px !important;
+  }
+  /* .experience-section .experience-box .left-text {
+    width: 70%;
+    overflow-wrap: break-word;
+  } */
 }

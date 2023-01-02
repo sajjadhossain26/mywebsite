@@ -17,6 +17,13 @@
   justify-content: space-between;
   align-items: center;
 }
+.Header .menu i {
+  font-size: 30px;
+  color: var(--TextColor);
+}
+.Header .ul-menu.add i {
+  margin-left: 0px;
+}
 .container .logo {
   max-width: 144px;
   margin: 10px 0px;
@@ -26,7 +33,7 @@
   align-items: center;
 }
 .container .menu ul i {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 .container .menu ul li a {
   display: block;

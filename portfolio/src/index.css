@@ -13,10 +13,9 @@ h5,
 h6 {
   font-family: "Play", sans-serif !important;
 }
-p,
-a,
-span {
-  font-family: "Play", sans-serif !important;
+
+a {
+  color: var(--TextColor);
 }
 button {
   font-family: "Play", sans-serif;
@@ -32,7 +31,7 @@ html {
   --TextColor: #fff;
   --BorderColor: #00bfe7;
   --IconColor: #00bfe7;
-  --TextGray: #adadad;
+  --TextGray: #d7d7d7;
 }
 .dark {
   --BgPrimary: #eb7966;
@@ -42,6 +41,14 @@ html {
   --BorderColor: white;
   --IconColor: #00bfe7;
   --TextGray: white;
+}
+
+p,
+span {
+  font-family: "Play", sans-serif !important;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: var(--TextGray) !important;
 }
 body {
   background-color: var(--BgSecondary);

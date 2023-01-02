@@ -10,9 +10,9 @@ import { useEffect } from "react";
 import { allPortfolio } from "./redux/portfolio/action";
 import SinglePortfolio from "./components/Portfolio/SinglePortfolio";
 import PortfolioItem from "./components/Portfolio/PortfolioItem";
-import Contact from "./components/Contact/Contact";
 import Services from "./components/Services/Services";
-import About from "./components/About/About";
+import About from "./Pages/About/AboutPage";
+import ContactPage from "./Pages/Contact/ContactPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<PortfolioItem />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/single-portfolio" element={<SinglePortfolio />} />
         <Route path="/me/portfolio" element={<PortfolioAdd />} />
         <Route path="/me/portfolio/manage" element={<MangePortfolio />} />

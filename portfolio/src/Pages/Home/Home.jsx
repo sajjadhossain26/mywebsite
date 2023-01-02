@@ -9,8 +9,20 @@ import Experience from "../../components/Experience/Experience";
 import heroImage from "../../assets/Images/hero.png";
 import { TypeAnimation } from "react-type-animation";
 import cv from "../../assets/Images/Sajjadhossain.pdf";
+import Lottie from "react-lottie";
+import { useRef } from "react";
+import hero from "../../assets/Images/hero.json";
 
 const Home = () => {
+  const ani = useRef(null);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: hero,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   const { skliton } = useSelector((state) => state.portfolio);
 
   return (
@@ -93,7 +105,7 @@ const Home = () => {
               </ul>
             </div>
             <div className="right-content">
-              <img src={heroImage} alt="" />
+              <Lottie options={defaultOptions} />
             </div>
           </div>
         </div>
