@@ -8,6 +8,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 const PortfolioItem = () => {
   const { portfolio, skliton } = useSelector((state) => state.portfolio);
   const navigate = useNavigate();
+  console.log(portfolio);
 
   const dispatch = useDispatch();
   const handleSingleShow = (id) => {

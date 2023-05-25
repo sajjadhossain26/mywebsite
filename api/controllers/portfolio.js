@@ -91,10 +91,10 @@ export const deletePortfolio = async (req, res, next) => {
 export const sendMail = async (req, res, next) => {
   try {
     const { name, email, description } = req.body;
-    await Contact.create(req.body);
+
     await contactMail(email, { name, description });
     res.status(200).json({
-      message: "Product deleted successful",
+      message: "Mail Send successful",
     });
   } catch (error) {
     next(createError(error));

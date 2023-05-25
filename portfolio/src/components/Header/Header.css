@@ -34,6 +34,7 @@
 }
 .container .menu ul i {
   margin-top: 8px;
+  cursor: pointer;
 }
 .container .menu ul li a {
   display: block;

@@ -63,14 +63,14 @@ const Header = () => {
                 </li>
 
                 <li>
-                  {theme === mon ? (
+                  {theme === "mon" ? (
                     <i onClick={themes} class="fas fa-sun"></i>
                   ) : (
                     <i onClick={themes} class="fas fa-moon"></i>
                   )}
                 </li>
               </ul>
-              {menu === menu ? (
+              {menu === "menu" ? (
                 <i
                   id="mobile-menu"
                   onClick={handleMenu}

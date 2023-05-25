@@ -81,6 +81,7 @@
   border: none;
   position: relative;
   padding: 10px 20px;
+  cursor: pointer;
 }
 .hero_btn::before {
   content: "";

@@ -60,7 +60,7 @@ const Home = () => {
                   data-aos-delay="50"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
-                  className="hero_btn"
+                  className="hero_btn button"
                 >
                   Download CV
                 </a>
